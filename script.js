@@ -1,10 +1,11 @@
 /* Discover Button */
 
 const discoverBtn = document.querySelector(".discover-btn");
+const main = document.querySelector("main");
 
 discoverBtn.onclick = () => {
 	window.scrollTo({
-		top: window.innerHeight,
+		top: main.offsetTop,
 		behavior: "smooth",
 	});
 };
