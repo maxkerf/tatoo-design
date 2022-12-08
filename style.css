@@ -1,0 +1,326 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap"); */
+
+/* 
+font-family: 'Indie Flower', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+/* All min vh vw calculated from the figma design => ex: el width in comparison of section height & width */
+
+:root {
+	--color-primary: #a333ff;
+	--color-secondary: #f1fee6;
+	--color-tertiary: #fee7e6;
+	--color-quaternary: #e6fdfe;
+	--color-prim-darker: #432060;
+	--color-prim-dark: #4e3960;
+	--color-prim-light: #f2f1f3;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+/* Global */
+
+h1 {
+	font-family: "Indie Flower", cursive;
+	font-size: 140px;
+	margin: 0;
+	font-weight: unset;
+	line-height: 1em;
+	color: var(--color-prim-darker);
+}
+
+h2 {
+	margin: unset;
+	font-family: "Indie Flower", cursive;
+	font-size: 64px;
+	color: var(--color-prim-darker);
+	font-weight: unset;
+	line-height: 1.25em;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	color: var(--color-prim-dark);
+	font-size: 32px;
+	margin: unset;
+}
+
+/* End Global */
+
+/* Header */
+
+header {
+	background-color: var(--color-prim-light);
+	height: 100vh;
+}
+
+/* Navigation */
+
+nav {
+	padding-top: min(4.3vh, 2.2vw);
+	padding-bottom: min(5.7vh, 2.9vw);
+	/* position: fixed;
+	top: 0;
+	width: 100%; */
+}
+
+ul {
+	list-style: unset;
+	padding: unset;
+	margin: unset;
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	margin: 0 min(2.6vh, 1.3vw);
+}
+
+li a {
+	text-decoration: unset;
+	font-family: "Indie Flower", cursive;
+	font-size: min(4.1vh, 2.2vw);
+	color: var(--color-prim-darker);
+}
+
+li a:hover {
+	color: var(--color-primary);
+}
+
+/* End Navigation */
+
+/* End Header */
+
+/* Hero Section */
+
+.hero {
+	display: grid;
+	grid-template-columns: repeat(2, min(67.3vh, 36.5vw));
+	grid-template-rows: repeat(4, auto);
+	justify-content: center;
+	gap: 0 min(2vh, 1vw); /* min(5.9vh, 3.2vw) */
+}
+
+.hero h1 {
+	text-align: right;
+	align-self: flex-end;
+	font-size: min(16.7vh, 9vw);
+	margin-top: min(6.4vh, 3.3vw);
+}
+
+.hero img {
+	grid-row: span 3;
+	width: 100%;
+	height: 100%;
+}
+
+.hero p {
+	text-align: right;
+	align-self: flex-start;
+	font-size: min(3.3vh, 1.8vw);
+	margin-left: min(11.5vh, 6.25vw);
+	margin-top: min(6.4vh, 3.3vw);
+	line-height: 150%;
+}
+
+.discover-btn {
+	justify-self: center;
+	grid-row-start: 4;
+	grid-column: span 2;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: min(1.9vh, 1vw);
+
+	text-decoration: unset;
+	background-color: unset;
+	border: unset;
+	padding: unset;
+	color: var(--color-primary);
+	transition: transform 0.5s;
+}
+
+.discover-btn:hover {
+	cursor: pointer;
+	transform: translateY(10%);
+}
+
+.discover-btn span {
+	font-family: "Indie Flower", cursive;
+	font-size: min(5.1vh, 2.8vw);
+	letter-spacing: 0.2em;
+}
+
+.discover-btn img {
+	width: min(6.4vh, 3.5vw);
+	height: min(6.4vh, 3.5vw);
+	margin-top: min(-1.9vh, -1vw);
+}
+
+/* End Hero Section */
+
+/* Tatoos Section */
+
+.tatoos {
+	background-color: var(--color-secondary);
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(2, min(67.3vh, 36.5vw));
+	grid-template-rows: repeat(2, auto);
+	gap: min(6vh, 3.5vw) min(2vh, 1vw);
+}
+
+.tatoos h2 {
+	align-self: flex-end;
+	font-size: min(8vh, 4.5vw);
+}
+
+.tatoos img {
+	grid-row: span 2;
+	width: 100%;
+	height: 100%;
+}
+
+.tatoos p {
+	align-self: flex-start;
+	margin-right: min(21.1vh, 11.4vw);
+	font-size: min(3.1vh, 1.7vw);
+	line-height: 150%;
+}
+
+/* End Tatoos Section */
+
+/* About Section */
+
+.about {
+	background-color: var(--color-tertiary);
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(2, min(67.3vh, 36.5vw));
+	grid-template-rows: repeat(2, auto);
+	gap: min(6vh, 3.5vw) min(2vh, 1vw);
+}
+
+.about h2 {
+	align-self: flex-end;
+	font-size: min(8vh, 4.5vw);
+	margin-left: min(9.6vh, 5.2vw);
+}
+
+.about img {
+	grid-row: span 2;
+	width: 90%;
+	height: 100%;
+	align-self: center;
+	justify-self: center;
+}
+
+.about p {
+	align-self: flex-start;
+	font-size: min(3.1vh, 1.7vw);
+	margin-left: min(9.6vh, 5.2vw);
+	line-height: 150%;
+}
+
+/* End About Section */
+
+/* Contact Section */
+
+.contact {
+	background-color: var(--color-quaternary);
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	grid-template-columns: repeat(2, min(67.3vh, 36.5vw));
+	grid-template-rows: repeat(2, auto);
+	gap: min(6vh, 3.5vw) min(2vh, 1vw);
+}
+
+.contact h2 {
+	align-self: flex-end;
+	font-size: min(8vh, 4.5vw);
+}
+
+.contact img {
+	grid-row: span 2;
+	width: 100%;
+	height: 100%;
+}
+
+.contact p {
+	align-self: flex-start;
+	margin-right: min(21.1vh, 11.4vw);
+	font-size: min(3.1vh, 1.7vw);
+	line-height: 150%;
+}
+
+/* End Contact Section */
+
+/* Footer */
+
+footer {
+	background-color: var(--color-prim-light);
+	color: var(--color-prim-dark);
+	text-align: center;
+	line-height: 250%;
+	font-size: min(2.6vh, 1.4vw);
+	font-family: "Lato", sans-serif;
+	padding: min(5.2vh, 2.8vw) 0 min(6.4vh, 3.5vw) 0;
+}
+
+footer a {
+	color: inherit;
+}
+
+footer a:hover {
+	color: var(--color-primary);
+}
+
+/* End Footer */
+
+/* Scroll Top Button */
+
+.scroll-top-btn {
+	position: fixed;
+	bottom: 15px;
+	right: 30px;
+
+	width: 50px;
+	height: 50px;
+	background-color: unset;
+	padding: unset;
+	border: unset;
+	cursor: pointer;
+
+	transition: transform 0.4s;
+}
+
+.scroll-top-btn.hidden {
+	transform: translateX(200%);
+}
+
+@media (any-hover: hover) {
+	.scroll-top-btn:hover {
+		transform: translateY(-10%);
+	}
+}
+
+.scroll-top-btn img {
+	width: 100%;
+	height: 100%;
+}
+
+/* End Scroll Top Button */
