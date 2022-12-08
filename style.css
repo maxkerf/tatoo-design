@@ -157,8 +157,6 @@ li a:hover {
 }
 
 .discover-btn img {
-	display: block;
-	margin: 0 auto;
 	width: min(6.4vh, 3.5vw);
 	height: min(6.4vh, 3.5vw);
 }
