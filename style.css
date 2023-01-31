@@ -46,7 +46,7 @@ h2 {
 }
 
 p {
-	font-family: "Lato", sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: var(--color-prim-dark);
 	font-size: 32px;
 	margin: unset;
@@ -64,23 +64,25 @@ header {
 /* Navigation */
 
 nav {
-	padding-top: min(4.3vh, 2.2vw);
-	padding-bottom: min(5.7vh, 2.9vw);
-	/* position: fixed;
+	position: fixed;
 	top: 0;
-	width: 100%; */
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--color-prim-light);
+	padding: min(2vh, 1.1vw) min(5.1vh, 2.8vw);
+	margin-top: min(3.3vh, 1.8vw);
+	border-radius: min(3.8vh, 2vw);
 }
 
 ul {
 	list-style: unset;
 	padding: unset;
 	margin: unset;
-	text-align: center;
 }
 
 li {
 	display: inline-block;
-	margin: 0 min(2.6vh, 1.3vw);
+	margin: 0 min(2.4vh, 1.3vw);
 }
 
 li a {
@@ -106,6 +108,7 @@ li a:hover {
 	grid-template-rows: repeat(4, auto);
 	justify-content: center;
 	gap: 0 min(2vh, 1vw); /* min(5.9vh, 3.2vw) */
+	padding-top: min(16.4vh, 9.1vw);
 }
 
 .hero h1 {
@@ -189,7 +192,7 @@ li a:hover {
 
 .tatoos p {
 	align-self: flex-start;
-	margin-right: min(21.1vh, 11.4vw);
+	margin-right: min(16vh, 8.7vw);
 	font-size: min(3.1vh, 1.7vw);
 	line-height: 150%;
 }
@@ -291,11 +294,11 @@ footer a:hover {
 
 .scroll-top-btn {
 	position: fixed;
-	bottom: 15px;
-	right: 30px;
+	bottom: min(1.9vh, 1vw); /* 15px for 1440/780 */
+	right: min(3.8vh, 2vw); /* 30px for 1440/780 */
 
-	width: 50px;
-	height: 50px;
+	width: min(6.4vh, 3.5vw);
+	height: min(6.4vh, 3.5vw);
 	background-color: unset;
 	padding: unset;
 	border: unset;
